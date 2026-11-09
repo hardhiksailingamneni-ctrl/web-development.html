@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Learning Platform</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+        body{
+            background:#f4f4f4;
+        }
+        header{
+            background:#007bff;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+        .container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+            padding:20px;
+        }
+        .course-card{
+            background:white;
+            width:300px;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+        .course-card img{
+            width:100%;
+            height:180px;
+        }
+        .content{
+            padding:15px;
+        }
+        h3{
+            color:#007bff;
+            margin-bottom:10px;
+        }
+        .progress{
+            background:#ddd;
+            border-radius:20px;
+            overflow:hidden;
+            margin:10px 0;
+        }
+        .progress-bar{
+            background:green;
+            height:15px;
+            color:white;
+            text-align:center;
+            font-size:12px;
+        }
+        button{
+            background:#007bff;
+            color:white;
+            border:none;
+            padding:10px 15px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        button:hover{
+            background:#0056b3;
+        }
+        @media(max-width:768px){
+            .course-card{
+                width:90%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Online Learning Platform</h1>
+</header>
+<div class="container">
+    <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStR-tk2ivrdcWu1YVY3t86P2-hDRJh0lzJQh820eHFgg&s=10" alt="Course">
+        <div class="content">
+            <h3>Web Development</h3>
+            <p><b>Category:</b> Programming</p>
+            <p><b>Instructor:</b> John Smith</p>
+            <p>Learn HTML, CSS and JavaScript from basics.</p>
+            <p><b>Objective:</b> Build responsive websites.</p>
+            <div class="progress">
+                <div class="progress-bar" style="width:70%;">70%</div>
+            </div>
+            <button>Enroll Now</button>
+        </div>
+    </div>
+    <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_F5x06-HsF19stHV9MCOu_Vf22H4nGWa7meIH0oI6A&s=10" alt="Course">
+        <div class="content">
+            <h3>Python Programming</h3>
+            <p><b>Category:</b> Coding</p>
+            <p><b>Instructor:</b> Sarah Lee</p>
+            <p>Learn Python for AI and software development.</p>
+            <p><b>Objective:</b> Create real-world applications.</p>
+            <div class="progress">
+                <div class="progress-bar" style="width:50%;">50%</div>
+            </div>
+            <button>Enroll Now</button>
+        </div>
+    </div>
+    <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCnLjEH14WOJHxaFm8iDRuY7dyJhBzKFgWNxYw4ZOuLw&s=10" alt="Course">
+        <div class="content">
+            <h3>Data Science</h3>
+            <p><b>Category:</b> Analytics</p>
+            <p><b>Instructor:</b> David Miller</p>
+            <p>Analyze and visualize data effectively.</p>
+            <p><b>Objective:</b> Become a Data Analyst.</p>
+            <div class="progress">
+                <div class="progress-bar" style="width:85%;">85%</div>
+            </div>
+            <button>Enroll Now</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
